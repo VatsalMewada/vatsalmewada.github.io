@@ -1,0 +1,14 @@
+/config/database.yml
+/node_modules/*
+storage/
+test/
+tmp/
+tmp/pids/server.pid
+log/*
+public/packs/js/*
+public/packs/media/*
+public/packs/*
+public/postmates_catalogs/*.json
+db/schema.rb
+.env
+public/packs/manifest.json
