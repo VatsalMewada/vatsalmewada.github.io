@@ -23,6 +23,7 @@
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
       </div>
+      <div class="curTime">Time</div>
     </div>
   </div>
 </footer>
@@ -30,3 +31,9 @@
   .blink_me{ animation: blinker 1s linear infinite; }
   @keyframes blinker{ 50%{ opacity: 0; } }
 </style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+  $(document).ready(function(){
+    setInterval(function(){ $(".curTime").text(new Date($.now())); }, 1000);
+  })
+</script>
